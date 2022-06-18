@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+{% if weight %}
+<head>
+    <meta charset="UTF-8">
+    <title>Parameters</title>
+</head>
+<body>
+    <h1>Average weight in Kg: {{ weight }}</h1>
+    <h1>Average height in CM: {{ height }}</h1>
+</body>
+
+
+{% elif line %}
+    <head>
+    <meta charset="UTF-8">
+    <title>Requirements</title>
+</head>
+<body>
+    <p>{{line}}</p>
+</body>
+
+
+{% elif number %}
+<head>
+    <meta charset="UTF-8">
+    <title>Parameters</title>
+</head>
+<body>
+    <h1>{{ number }} - astronauts are in space now</h1>
+</body>
+{% endif %}
+</html>
